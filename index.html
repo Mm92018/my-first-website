@@ -6,7 +6,22 @@
 </head>
 <body>
     <h1>hi guy!</h1>
+
     <p> it is my first web</p>
-    <button>cick me</button>
+    <p>my nane is SONE </p>
+    <p>what is your name</p>
+    <input type="text" id="nameInput">
+    <button onclick="sayHello()">chick me</button>
+
+    <p id="greeting"></p>
+
+    <script>
+        function sayHello() {
+            const name = document.getElementById("nameInput").value;
+            document.getElementById("greeting").innerText = "Hi " + name + "!";
+
+        }
+    </script>
+
 </body>
 </html>
